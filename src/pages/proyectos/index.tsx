@@ -2,13 +2,9 @@ import { Navigation } from "@/components/Navigation/Navigation";
 import { PageHeader } from "@/components/PageHeader/PageHeader";
 import { CardProject } from "@/components/CardProject/CardProject";
 
-import styles from "./page.module.css";
-
-
-
-export default function Home() {
+export default function Proyectos  ()  {
   return (
-    <main className={styles.page}>
+    <main>
       <Navigation />
       <section>
         <PageHeader />
@@ -27,5 +23,5 @@ export default function Home() {
         </section>
       </section>
     </main>
-  );
+  )
 }
