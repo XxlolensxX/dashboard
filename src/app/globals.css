@@ -1,42 +1,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-griendt: linear-gradient(to right top, #603664, #593866, #513a66, #4a3c67, #433d66, #39426a, #2f476c, #254b6d, #14546f, #0a5c6e, #15636a, #286965);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  margin: 0; 
+  padding: 0; 
+}
+*, *::before, *::after{
+  box-sizing: border-box; 
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.bg-gradient {
+  background-image: var(--bg-griendt);
 }

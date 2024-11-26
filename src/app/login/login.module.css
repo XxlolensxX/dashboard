@@ -1,0 +1,56 @@
+.loginGrid {
+  display: flex;
+  height: 100vh;
+}
+
+.loginGridCol {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loginGridCol:first-of-type {
+  background-color: #0B1437;
+  color: white;
+}
+
+.loginGridInner h1 {
+  font-size: 36px;
+	line-height: 56px;
+}
+
+.loginGridInner h2 {
+	color: #A3AED0;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.loginItem {
+	margin-top: 26px;
+}
+
+.loginItemGoogle button {
+	background-color: #1B254B;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+	padding: 15px;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.loginItemGoogle button:hover {
+	background-color: #A3AED0;
+	transition-duration: 0.3s;
+}
+
+.loginItemGoogle button span {
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+}

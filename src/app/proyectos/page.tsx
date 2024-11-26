@@ -1,11 +1,11 @@
-import { Navigation } from "@/components/Navigation/Navigation";
+'use client'
+
 import { PageHeader } from "@/components/PageHeader/PageHeader";
 import { CardProject } from "@/components/CardProject/CardProject";
 
 export default function Proyectos  ()  {
   return (
     <main>
-      <Navigation />
       <section>
         <PageHeader />
         <section>
