@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #111C44;
+    max-width: 300px;
+    height: 100vh;
+    .navHeader {
+      padding: 15px 33px;
+      text-align: center;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .navBody {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 33px;
+      border-top: 1px solid rgba($color: white, $alpha: 0.1);
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 5px 33px;
+        span {
+          color: white;
+          font-size: 16px;
+        }
+        &.navBodyItemActive {
+          border-right: 4px solid #7551FF;
+        }
+      }
+    }
+}

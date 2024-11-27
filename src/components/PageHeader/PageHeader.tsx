@@ -1,18 +1,22 @@
 
 
-type Props = {}
+import style from './pageHeader.module.scss'
 
-export const PageHeader = (props: Props) => {
+type Props = {
+  pageTitle: string
+}
+
+export const PageHeader = ({ pageTitle }: Props) => {
   return (
-    <div className="page-header">
+    <div className={style.pageHeader}>
       <div className="page-header-navigation">
-        <div className="page-breadcrubms">
+        <div className={style.pageBreadcrumbs}>
           <nav>
             <a href="#">Pages</a>
             <span>Page 1</span>
           </nav>
         </div>
-        <h1>Page name</h1>
+        <h1>{pageTitle}</h1>
       </div>
       <div className="page-haeder-actions">
         <form action="" className="form">

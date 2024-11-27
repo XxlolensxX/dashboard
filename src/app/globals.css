@@ -1,7 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --bg-griendt: linear-gradient(to right top, #603664, #593866, #513a66, #4a3c67, #433d66, #39426a, #2f476c, #254b6d, #14546f, #0a5c6e, #15636a, #286965);
+  --bg-griendt: linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
 }
 
 *{
@@ -14,4 +14,12 @@
 
 .bg-gradient {
   background-image: var(--bg-griendt);
+}
+
+.bg-dark {
+  background-color: #0B1437;
+}
+
+a {
+  text-decoration: none;
 }

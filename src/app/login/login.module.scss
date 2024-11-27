@@ -1,0 +1,113 @@
+.divider {
+  color: #A3AED0;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 26px;
+}
+
+.divider:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.divider span {
+  color: #A3AED0;
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  background-color: #0B1437;
+}
+
+
+.loginGrid {
+  display: flex;
+  height: 100vh;
+}
+
+.loginGridCol {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:first-of-type {
+    color: white;
+  }
+  &:last-of-type {
+    border-bottom-left-radius: 100px;
+  }
+}
+
+
+.loginGridInner h1 {
+  font-size: 36px;
+	line-height: 56px;
+}
+
+.loginGridInner h2 {
+	color: #A3AED0;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.loginItem {
+	margin-top: 26px;
+}
+
+.loginItemGoogle button {
+	background-color: #1B254B;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+	padding: 15px;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.loginItemGoogle button:hover {
+	background-color: #A3AED0;
+	transition-duration: 0.3s;
+}
+
+.loginItemGoogle button span {
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.loginCrateAccount {
+  margin-top: 26px;
+  color: #A3AED0;
+  font-size: 14px;
+  a {
+    color: white;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.brand {
+  svg {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  p {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 60px;
+  }
+}

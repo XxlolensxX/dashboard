@@ -1,18 +1,13 @@
-'use client'
-
-import Link from "next/link";
-
 import { LoginForm } from "@/components/LoginForm/LoginForm";
 
 import { montserrat } from "../fonts";
 
 import "./../globals.css";
-import styles from './login.module.css'
+import styles from './login.module.scss'
 
-//TODO: Hacer el layout para el login
 export default function Login () {
   return (
-    <section className={`${ montserrat.className } bg-gradient`} >
+    <section className={`${ montserrat.className } bg-dark`} >
       <div className={ styles.loginGrid } >
         <div className={ styles.loginGridCol } >
           <div className={ styles.loginGridInner } >
@@ -36,24 +31,21 @@ export default function Login () {
                 <span>Sign in with Google</span>
               </button>
             </div>
-            <div className={ `${styles.loginItem} ${styles.loginItemForm}` }>
+            <div className={ styles.divider }>
+              <span>or</span>
+            </div>
+            <div className={ `${styles.loginItem}` }>
               <LoginForm />
-              <p>Not register yet? <a href="#">Create an Account</a></p>
+              <p className={ styles.loginCrateAccount}>Not register yet? <a href="#">Create an Account</a></p>
             </div>
           </div>
         </div>
-        <div className={ styles.loginGridCol } >
-          <div className="brand">
-            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.75 125.625V18.75H91.875V125.625H18.75Z" fill="white"/>
-              <path d="M148.125 58.125V18.75H221.25V58.125H148.125Z" fill="white"/>
-              <path d="M148.125 221.25V114.375H221.25V221.25H148.125Z" fill="white"/>
-              <path d="M18.75 221.25V181.875H91.875V221.25H18.75Z" fill="white"/>
-              <path fillRule="evenodd" clipRule="evenodd" d="M129.375 7.5C129.375 3.35786 132.733 0 136.875 0H232.5C236.642 0 240 3.35787 240 7.5V69.375C240 73.5171 236.642 76.875 232.5 76.875H136.875C132.733 76.875 129.375 73.5171 129.375 69.375V7.5ZM148.125 18.75V58.125H221.25V18.75H148.125ZM129.375 103.125C129.375 98.9829 132.733 95.625 136.875 95.625H232.5C236.642 95.625 240 98.9829 240 103.125V232.5C240 236.642 236.642 240 232.5 240H136.875C132.733 240 129.375 236.642 129.375 232.5V103.125ZM148.125 114.375V221.25H221.25V114.375H148.125Z" fill="white"/>
-              <path fillRule="evenodd" clipRule="evenodd" d="M103.125 0H7.5C3.35786 0 0 3.35786 0 7.5V136.875C0 141.017 3.35786 144.375 7.5 144.375H103.125C107.267 144.375 110.625 141.017 110.625 136.875V7.5C110.625 3.35787 107.267 0 103.125 0ZM18.75 18.75V125.625H91.875V18.75H18.75Z" fill="white"/>
-              <path fillRule="evenodd" clipRule="evenodd" d="M103.125 163.125H7.5C3.35786 163.125 0 166.483 0 170.625V232.5C0 236.642 3.35786 240 7.5 240H103.125C107.267 240 110.625 236.642 110.625 232.5V170.625C110.625 166.483 107.267 163.125 103.125 163.125ZM18.75 181.875V221.25H91.875V181.875H18.75Z" fill="white"/>
+        <div className={ `bg-gradient ${styles.loginGridCol}` } >
+          <div className={styles.brand}>
+            <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" clipRule="evenodd" d="M444.89 283.23C446.227 331.745 437.166 436.889 314.53 488C334.454 454.146 306.429 411.181 280.284 371.1C272.904 359.784 265.673 348.699 259.713 338.113C254.397 330.445 250.061 321.91 246.94 312.627C229.089 259.532 257.752 202.051 310.961 184.238C364.169 166.425 421.775 195.027 439.626 248.122C443.541 259.768 445.219 271.626 444.89 283.23ZM238.167 139.972C258.774 117.461 308.885 73.8155 386.734 104.146C362.912 110.774 356.785 142.41 351.07 171.925C349.458 180.25 347.878 188.406 345.944 195.785C344.993 201.575 343.218 207.329 340.565 212.893C325.406 244.678 287.294 258.182 255.441 243.055C223.588 227.929 210.054 189.899 225.214 158.114C228.533 151.154 232.953 145.07 238.167 139.972ZM252.83 352.686C227.109 369.184 167.495 398.508 100.064 349.319C124.793 349.001 138.836 319.985 151.936 292.916C155.635 285.273 159.259 277.785 163.028 271.142C165.432 265.797 168.621 260.695 172.608 256.002C195.42 229.152 235.727 225.839 262.635 248.602C289.543 271.365 292.863 311.585 270.051 338.436C265.044 344.328 259.195 349.087 252.83 352.686ZM61.2061 164.745C75.4085 118.318 117.519 21.5322 250.062 12C220.382 37.7725 233.256 87.4004 245.267 133.699C248.66 146.775 251.983 159.586 254.26 171.519C256.852 180.472 258.241 189.933 258.241 199.719C258.241 255.722 212.744 301.121 156.62 301.121C100.497 301.121 55 255.722 55 199.719C55 187.427 57.1916 175.647 61.2061 164.745Z" fill="white"/>
             </svg>
-            <p>Brand</p>
+            <p>Lorem ipsum</p>
           </div>
         </div>
       </div>

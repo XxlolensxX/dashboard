@@ -1,0 +1,33 @@
+.pageHeader {
+  padding-top: 49px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  align-items: center;
+  h1 {
+    color: white;
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+
+.pageBreadcrumbs {
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  a, span  {
+    color: white;
+    font-size: 14px;
+  }
+  a {
+    position: relative;
+    &:after {
+      content: '/';
+      color: inherit;
+      position: absolute;
+      right: -15px;
+    }
+  }
+}
