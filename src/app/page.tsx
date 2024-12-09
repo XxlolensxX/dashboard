@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation/Navigation";
 import { PageHeader } from "@/components/PageHeader/PageHeader";
 import { CardProject } from "@/components/CardProject/CardProject";
 
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 
 
@@ -11,7 +11,7 @@ export default function Home() {
     <main className={styles.page}>
       <Navigation />
       <section>
-        <PageHeader />
+        <PageHeader pageTitle=""/>
         <section>
           <div className="filter">
             <h3>Filtros</h3>

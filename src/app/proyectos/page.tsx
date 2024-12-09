@@ -5,7 +5,7 @@ export default function Proyectos  ()  {
   return (
     <main>
       <section>
-        <PageHeader />
+        <PageHeader pageTitle="asasd"/>
         <section>
           <div className="filter">
             <h3>Filtros</h3>
