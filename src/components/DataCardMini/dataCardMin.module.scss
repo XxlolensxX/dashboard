@@ -1,0 +1,30 @@
+.dataCardMini {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #111C44;
+  border-radius: 20px;
+  padding: 20px;
+  .dataCardMiniHeader {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    img {
+      width: 100%;
+    }
+  }
+  .dataCardMiniBody {
+    span {
+      color: #A3AED0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    p {
+      color: white;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}

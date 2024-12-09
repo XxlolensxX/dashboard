@@ -1,0 +1,19 @@
+.cardProject {
+  background-color: #111C44;
+  border-radius: 20px;
+  padding: 20px;
+  .cardProjectHeader {
+    img {
+      width: 100%;
+      border-radius: 18px;
+    }
+  }
+  .cardProjectBody {
+    margin-top: 20px;
+    padding: 0 10px;
+    color: white;
+    h3 {
+
+    }
+  }
+}

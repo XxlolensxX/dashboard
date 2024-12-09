@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 
 import { montserrat } from "./fonts";
 
-import "./globals.css";
+import { Navigation } from "@/components/Navigation/Navigation";
 
+import "./globals.css";
+import styles  from './page.module.scss'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
-        {children}
+      <body className={`${montserrat.className} ${styles.body}`}>
+        <Navigation />
+        <main >
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -18,23 +18,25 @@ export const PageHeader = ({ pageTitle }: Props) => {
         </div>
         <h1>{pageTitle}</h1>
       </div>
-      <div className="page-haeder-actions">
-        <form action="" className="form">
-          <div className="form-group">
+      <div className={style.pageHeaderActions}>
+        <form action="" className={style.form}>
+          <div className={style.formGroup}>
+            <input 
+              id="search" 
+              type="text"
+              placeholder=""
+            />
             <label htmlFor="search">
 							<svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="5" cy="5" r="4.3" stroke="white" strokeWidth="1.4"/>
 								<line x1="10.0101" y1="11" x2="8" y2="8.98995" stroke="white" strokeWidth="1.4" strokeLinecap="round"/>
 							</svg>
+              <span>Search</span>
 						</label>
-            <input 
-              id="search" 
-              type="text" 
-            />
           </div>
         </form>
-				<div className="page-header-user-actions">
-					<img src="https://placehold.co/40x40" alt="lorem ipsum" />
+				<div className={style.pageHeaderUserActions}>
+					<img src="https://picsum.photos/40/40" alt="lorem ipsum" />
 				</div>
       </div>
     </div>

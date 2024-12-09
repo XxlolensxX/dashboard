@@ -1,0 +1,15 @@
+.dashbordarData {
+	.dashboardDataGrid {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+}
+
+.dashboardProjects {
+	.dashboardProjectsGrid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+		gap: 20px;
+	}
+}

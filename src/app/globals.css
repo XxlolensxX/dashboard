@@ -23,3 +23,9 @@
 a {
   text-decoration: none;
 }
+
+.inner-container {
+  width: 100%;
+  padding: 20px;
+  max-width: 100%;
+}
