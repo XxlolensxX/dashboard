@@ -4,13 +4,12 @@ import { useRouter } from 'next/navigation'
 
 import styles from './loginForm.module.scss'
 
-type Props = {}
 
-export const LoginForm = (props: Props) => {
+export const LoginForm = () => {
 
   const router = useRouter()
 
-  const handleLogin = ( event:any ) =>  {
+  const handleLogin = ( event:React.FormEvent<HTMLFormElement> ) =>  {
 
     console.log( event)
 

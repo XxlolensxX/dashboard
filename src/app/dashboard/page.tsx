@@ -4,15 +4,13 @@ import { PageHeader } from "@/components/PageHeader/PageHeader"
 import styles from './page.module.scss'
 import { CardProject } from "@/components/CardProject/CardProject"
 
-type Props = {}
-
-export default function Dashboard (props: Props) {
+export default function Dashboard () {
   return (
     <>
       <section>
         <div className="inner-container">
           <PageHeader 
-            pageTitle={ 'Dashboard'} 
+            pageTitle={ 'Dashboard' } 
           />
         </div>
       </section>

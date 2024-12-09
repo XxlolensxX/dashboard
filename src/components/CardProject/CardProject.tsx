@@ -1,8 +1,6 @@
 import styles from './cardProject.module.scss'
 
-type Props = {}
-
-export const CardProject = (props: Props) => {
+export const CardProject = () => {
   return (
     <article className={styles.cardProject}>
       <figure className={styles.cardProjectHeader}>
