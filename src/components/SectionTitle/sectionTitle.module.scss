@@ -1,0 +1,31 @@
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  h2 {
+    color: white;
+  }
+  .sectionTitleFilter {
+    display: flex;
+    gap: 10px;
+    button {
+      color: white;
+      font-size: 14px;
+      background-color: transparent;
+      border: none;
+      padding: 4px 25px;
+      cursor: pointer;
+      font-weight: 700;
+      &.active,
+      &:hover {
+        background-color: #111C44;
+        font-size: 14px;
+        line-height: 24px;
+        border-radius: 70px;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}

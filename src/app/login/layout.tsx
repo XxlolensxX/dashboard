@@ -6,8 +6,12 @@ export default function LoginLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className={`${montserrat.className}`} >
-      {children}
-    </main>
+    <html>
+      <body>
+        <main className={`${montserrat.className}`} >
+          {children}
+        </main> 
+      </body>
+    </html>
   )
 }

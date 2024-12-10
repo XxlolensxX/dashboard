@@ -2,6 +2,9 @@
   background-color: #111C44;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   .cardProjectHeader {
     img {
       width: 100%;
@@ -9,11 +12,37 @@
     }
   }
   .cardProjectBody {
-    margin-top: 20px;
     padding: 0 10px;
     color: white;
-    h3 {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cardProjectBodyInformation {
+      > h3 {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      > p {
+        font-size: 14px;
+        color: #A3AED0;
+        line-height: 20px;
+      }
+    }
+  }
+  .cardProjectFooter {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      background-color: #7551FF;
+      color: white;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 5px 24px;
+      border-radius: 70px;
+      &:hover {
+        background-color: #FFB547;
+        transition-duration: 0.3s;
+      }
     }
   }
 }
